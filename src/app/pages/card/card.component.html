@@ -5,5 +5,5 @@
         <img src="{{image}}" alt="">
     </figure>
     <p>{{price}},-</p>
-    <button (click)="addToCart({id: id, name: title})">Tilføj til kurv</button>
+    <button (click)="addToCart({id: id, name: title, price: price, image: image})">Tilføj til kurv</button>
 </article>

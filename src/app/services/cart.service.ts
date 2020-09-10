@@ -75,7 +75,7 @@ export class CartService {
     let shopping_cart;
     shopping_cart = JSON.parse(localStorage.getItem('cart'));
     for (let i in shopping_cart) {
-      if (item.product.name == shopping_cart[i].product.name) {
+      if (item == shopping_cart[i].product.name) {
         shopping_cart[i].quantity += 1;
         item = null;
         break;
@@ -83,8 +83,20 @@ export class CartService {
     }
     localStorage.setItem('cart', JSON.stringify(shopping_cart));
     this.subject.next('changed');
-
-
+  }
+  subtractQty(item) {
+    item = item;
+    let shopping_cart;
+    shopping_cart = JSON.parse(localStorage.getItem('cart'));
+    for (let i in shopping_cart) {
+      if (item == shopping_cart[i].product.name) {
+        shopping_cart[i].quantity -= 1;
+        item = null;
+        break;
+      }
+    }
+    localStorage.setItem('cart', JSON.stringify(shopping_cart));
+    this.subject.next('changed');
   }
   numberOfItems() {
     let itemsInCart = JSON.parse(localStorage.getItem('cart'));

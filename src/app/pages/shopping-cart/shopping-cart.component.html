@@ -1,17 +1,39 @@
 <main class="shoppingCart_main_container">
-    <h1>This is your shopping cart</h1>
+    <h1>Det her er dit indkøbskurv</h1>
     <a class="back_link" routerLink="/">Tilbage til forsiden</a>
-    <section class="item_container">
-        <section class="item_top">
-            <p>Navn</p>
-            <p>Antal</p>
-            <p class="last">Slet</p>
+    <section class="content_container">
+
+        <section class="item_container">
+            <section class="item_top">
+                <p>Image</p>
+                <p>Navn</p>
+                <p>Antal</p>
+                <p>Pris</p>
+                <p class="last">Slet</p>
+            </section>
+            <article *ngFor="let item of items">
+                <figure>
+                    <img src="{{item.product.image}}" alt="">
+                </figure>
+                <h2>{{item.product.name}}</h2>
+                <section class="changeQuantity">
+                    <button (click)="changeMinusQuantity(item.product.name)">-</button>
+                    <p>{{item.quantity}}</p>
+                    <button (click)="changePlusQuantity(item.product.name)">+</button>
+
+                </section>
+                <p>{{+item.product.price * item.quantity}},-</p>
+                <button class="last" (click)="deleteItem(item.product.name)"><span class="material-icons"> clear
+                    </span></button>
+            </article>
         </section>
-        <article *ngFor="let item of items">
-            <h2>{{item.product.name}}</h2>
-            <p>{{item.quantity}}</p>
-            <button class="last" (click)="deleteItem(item.product.name)"><span class="material-icons"> clear
-                </span></button>
-        </article>
+        <section class="information_container">
+            <h2>Pris: </h2>
+            <p><strong>Samlet køb: </strong><span>{{totalPrice}},-</span></p>
+            <p><strong>Heraf moms: </strong><span>{{moms}},-</span></p>
+            <p><strong>Total: </strong><span>{{totalPrice + moms}},-</span></p>
+            <a routerLink="/Thankyou">KØB</a>
+        </section>
     </section>
+
 </main>

@@ -9,12 +9,29 @@ import { ThrowStmt } from '@angular/compiler';
 })
 export class ShoppingCartComponent implements OnInit {
   items: any;
-
+  totalPrice: number = 0
+  moms: number;
   constructor(private CartService: CartService) { }
 
   ngOnInit(): void {
     this.items = this.CartService.getItems()
     console.log(this.items);
+    for (const item of this.CartService.getItems()) {
+      const totalAmount = +item.product.price * item.quantity;
+      this.totalPrice = this.totalPrice + totalAmount;
+    }
+    this.moms = this.totalPrice * 0.25;
+    console.log(this.moms);
+
+    this.CartService.subject.subscribe((status) => {
+      this.moms = this.totalPrice * 0.25;
+
+      for (const item of this.CartService.getItems()) {
+        const totalAmount = +item.product.price * item.quantity;
+        this.totalPrice = this.totalPrice + totalAmount;
+      }
+
+    });
 
   }
   deleteItem(itemName) {
@@ -24,7 +41,25 @@ export class ShoppingCartComponent implements OnInit {
       this.items = this.CartService.getItems()
     });
     this.CartService.deleteItem({ name: itemName });
+  }
 
+  changePlusQuantity(itemName) {
+    this.CartService.subject.subscribe((status) => {
+      console.log(status);
+      this.items = this.CartService.getItems()
+      console.log(this.items);
+
+    });
+    this.CartService.addQty(itemName)
+  }
+  changeMinusQuantity(itemName) {
+    this.CartService.subject.subscribe((status) => {
+      console.log(status);
+      this.items = this.CartService.getItems()
+      console.log(this.items);
+
+    });
+    this.CartService.subtractQty(itemName)
   }
 
 }

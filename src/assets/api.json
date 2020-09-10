@@ -4,7 +4,7 @@
         "title": "Komplett i140 Core Gaming PC",
         "image": "https://www.komplett.dk/img/p/1200/1159973.jpg",
         "teaser": "GeForce RTX 2060, Core i7-10700F, 16GB, 1TB SSD, WiFi, Windows 10 Home",
-        "price": "9.999"
+        "price": "9999"
     },
     {
         "id": "2",
@@ -25,14 +25,14 @@
         "title": "Asus RT-AC86U Gaming Router",
         "image": "https://www.komplett.dk/img/p/1200/952739.jpg",
         "teaser": "AC2900, dual-band, MU-MIMO, WTFast, AiMesh",
-        "price": "1.190"
+        "price": "1190"
     },
     {
         "id": "5",
         "title": "Komplett i50 Epic Gaming PC",
         "image": "https://www.komplett.dk/img/p/1200/1139755.jpg",
         "teaser": "Geforce GTX 1650 SUPER, Core i5-9400F, 8GB, 500GB SSD, Wifi, Windows 10 Home",
-        "price": "6.499"
+        "price": "6499"
     },
     {
         "id": "6",
@@ -40,5 +40,47 @@
         "image": "https://www.komplett.dk/img/p/1200/1128794.jpg",
         "teaser": "USB, 7 programmerbare knapper, 18000 DPI, RGB lys, optisk gaming-mus",
         "price": "399"
+    },
+    {
+        "id": "7",
+        "title": "AMD Ryzen 7 3700X Processor",
+        "image": "https://www.komplett.dk/img/p/1200/1132194.jpg",
+        "teaser": "Socket-AM4, 8-Core, 16-Thread, 3.6/4.4GHz, 65W, 7nm, inkl. køler",
+        "price": "2299"
+    },
+    {
+        "id": "8",
+        "title": "HyperX Fury RGB DDR4 2666MHz 4x16GB",
+        "image": "https://www.komplett.dk/img/p/1200/1141553.jpg",
+        "teaser": "4x16GB 2666MHz DDR4 CL16",
+        "price": "2499"
+    },
+    {
+        "id": "9",
+        "title": "Apple Leather Case",
+        "image": "https://www.komplett.dk/img/p/400/953940.jpg",
+        "teaser": "Black, for iPhone 8 Plus / 7 Plus",
+        "price": "399"
+    },
+    {
+        "id": "10",
+        "title": "ICY BOX Protective case for Raspberry Pi 4",
+        "image": "https://www.komplett.dk/img/p/1000/1162231.jpg",
+        "teaser": "ICY BOX Protective case for Raspberry Pi 4 in transparant black",
+        "price": "149"
+    },
+    {
+        "id": "11",
+        "title": "ICY BOX Aluminium transport case",
+        "image": "https://www.komplett.dk/img/p/640/893279.jpg",
+        "teaser": "IB-AC628. Aluminiumskuffert for 10x 2.5 / 3.5 harddisker",
+        "price": "399"
+    },
+    {
+        "id": "12",
+        "title": "Acer 24 skærm KA242Y",
+        "image": "https://www.komplett.dk/img/p/1200/1150806.jpg",
+        "teaser": "1920x1080 IPS, 75hz, 1ms, 1000:1, FreeSync, VGA/HDMI",
+        "price": "1149"
     }
 ]
