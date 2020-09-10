@@ -1,0 +1,24 @@
+.main_container {
+    width: 80%;
+    margin: 0 auto;
+
+    h1 {
+        margin: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    app-cart {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+        padding: 1em;
+    }
+
+    .products_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+    }
+}

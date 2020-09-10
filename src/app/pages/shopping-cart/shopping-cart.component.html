@@ -1,0 +1,17 @@
+<main class="shoppingCart_main_container">
+    <h1>This is your shopping cart</h1>
+    <a class="back_link" routerLink="/">Tilbage til forsiden</a>
+    <section class="item_container">
+        <section class="item_top">
+            <p>Navn</p>
+            <p>Antal</p>
+            <p class="last">Slet</p>
+        </section>
+        <article *ngFor="let item of items">
+            <h2>{{item.product.name}}</h2>
+            <p>{{item.quantity}}</p>
+            <button class="last" (click)="deleteItem(item.product.name)"><span class="material-icons"> clear
+                </span></button>
+        </article>
+    </section>
+</main>

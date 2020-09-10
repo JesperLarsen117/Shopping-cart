@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ForsideComponent } from './pages/forside/forside.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './pages/card/card.component';
+import { CartComponent } from './partial/cart/cart.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ForsideComponent,
+    CardComponent,
+    CartComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

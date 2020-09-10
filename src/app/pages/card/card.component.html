@@ -1,0 +1,9 @@
+<article class="product_container">
+    <h2>{{title}}</h2>
+    <p>{{teaser}}</p>
+    <figure>
+        <img src="{{image}}" alt="">
+    </figure>
+    <p>{{price}},-</p>
+    <button (click)="addToCart({id: id, name: title})">Tilføj til kurv</button>
+</article>

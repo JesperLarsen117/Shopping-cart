@@ -1,0 +1,16 @@
+.cart_container {
+    position: relative;
+
+    .quantity {
+        position: absolute;
+        top: -1em;
+        right: -1em;
+        background-color: #d84141;
+        width: 25px;
+        text-align: center;
+        padding-top: .3em;
+        height: 25px;
+        border-radius: 50px;
+        color: white;
+    }
+}

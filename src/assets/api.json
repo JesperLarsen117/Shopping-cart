@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "title": "Komplett i140 Core Gaming PC",
+        "image": "https://www.komplett.dk/img/p/1200/1159973.jpg",
+        "teaser": "GeForce RTX 2060, Core i7-10700F, 16GB, 1TB SSD, WiFi, Windows 10 Home",
+        "price": "9.999"
+    },
+    {
+        "id": "2",
+        "title": "MSI MAG B550M MORTAR bundkort",
+        "image": "https://www.komplett.dk/img/p/1024/1161246.jpg",
+        "teaser": "AM4, mATX, B550, DDR4, 2x M.2, PCIe 4.0",
+        "price": "999"
+    },
+    {
+        "id": "3",
+        "title": "Corsair Gaming K70 MK.2 Tastatur",
+        "image": "https://www.komplett.dk/img/p/1200/1079316.jpg",
+        "teaser": "USB a pass-through, nordisk, cherry mx brown, rgb, mekanisk gaming tastatur",
+        "price": "899"
+    },
+    {
+        "id": "4",
+        "title": "Asus RT-AC86U Gaming Router",
+        "image": "https://www.komplett.dk/img/p/1200/952739.jpg",
+        "teaser": "AC2900, dual-band, MU-MIMO, WTFast, AiMesh",
+        "price": "1.190"
+    },
+    {
+        "id": "5",
+        "title": "Komplett i50 Epic Gaming PC",
+        "image": "https://www.komplett.dk/img/p/1200/1139755.jpg",
+        "teaser": "Geforce GTX 1650 SUPER, Core i5-9400F, 8GB, 500GB SSD, Wifi, Windows 10 Home",
+        "price": "6.499"
+    },
+    {
+        "id": "6",
+        "title": "Corsair Gaming Glaive RGB Pro Mus Svart",
+        "image": "https://www.komplett.dk/img/p/1200/1128794.jpg",
+        "teaser": "USB, 7 programmerbare knapper, 18000 DPI, RGB lys, optisk gaming-mus",
+        "price": "399"
+    }
+]

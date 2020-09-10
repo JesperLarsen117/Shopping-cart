@@ -1,0 +1,10 @@
+<main class="main_container">
+    <header>
+        <h1>Købt alt godt pc udstyr hos os!</h1>
+    </header>
+    <app-cart></app-cart>
+    <section class="products_container">
+        <card *ngFor="let product of products" [id]="product.id" [title]="product.title" [teaser]="product.teaser"
+            [image]="product.image" [price]="product.price"></card>
+    </section>
+</main>

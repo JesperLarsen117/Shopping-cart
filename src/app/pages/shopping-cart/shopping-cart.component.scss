@@ -1,0 +1,58 @@
+.shoppingCart_main_container {
+    width: 80%;
+    margin: 0 auto;
+
+    h1 {
+        margin: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .item_container {
+        width: 100%;
+
+        .item_top {
+            display: grid;
+            grid-template-columns: 80% 1fr 1fr;
+
+            p {
+                padding: 1em;
+            }
+
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 80% 1fr 1fr;
+            background-color: #fff;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 1em;
+            align-items: center;
+
+            h2,
+            p,
+            button {
+                padding: 1em;
+            }
+
+            button {
+                width: 60px;
+                color: white;
+                background-color: red;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.back_link {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.last {
+    justify-self: end;
+    margin-right: 1em;
+}
